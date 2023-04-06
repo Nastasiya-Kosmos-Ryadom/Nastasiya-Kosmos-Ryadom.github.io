@@ -29,3 +29,15 @@ h2 {
     color: blueviolet;
     background-color: cadetblue;
 }
+span {
+    color: blue;
+}
+div span {
+    color: red;
+}
+.мамы .дети {
+    color: blueviolet;
+}
+div>p {
+    background-color: aqua;
+}
