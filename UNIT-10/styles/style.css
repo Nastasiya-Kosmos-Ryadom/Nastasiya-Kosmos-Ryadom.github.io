@@ -1,0 +1,31 @@
+* {
+color: blue;
+}
+h1 {
+    color: brown;
+    background-color: blanchedalmond;
+}
+h2 {
+    color: rgb(226, 121, 46);
+}
+.predators {
+    color: rgb(243, 21, 143);
+}
+.herbivores {
+    color: darkgreen;
+}
+.title {
+    color: rgb(14, 175, 55);
+}
+#pets {
+    color: rgb(125, 12, 129);
+    background-color: darksalmon;
+}
+#big-pets {
+    color: rgb(228, 188, 12);
+    background-color: aquamarine;
+}
+[type="text"] {
+    color: blueviolet;
+    background-color: cadetblue;
+}
