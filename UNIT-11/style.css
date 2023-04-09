@@ -1,0 +1,55 @@
+p::first-line {
+    color: blueviolet;
+}
+/*p::first-letter {
+    color: forestgreen;
+    font-size: 3rem;
+    font-weight: 600;
+}*/
+p::before {
+    content: '!!!';
+    color: red;
+}
+p::after {
+    content: '***';
+    color: rgb(43, 255, 0);
+}
+li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+.first li::before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background-color: deeppink;
+    border-radius: 999px;
+    margin-right: 20px;
+}
+.first li::after {
+    content: '>>>>>>>>>';
+    color: crimson;
+}
+.second li::before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(90, 236, 134);
+    border-radius: 999px;
+    margin-right: 20px;
+}
+.second li::after {
+    content: '-----------';
+    color: rgb(23, 20, 220);
+}
+.third li::marker {
+    color: red;
+    font-size: 2rem;
+}
+a::after {
+    content: '😎';
+}
