@@ -128,3 +128,7 @@ ul.third {
 ul.second {
     color: var(--font-color-second);
 }
+
+.bem__smile::after {
+    content: '🤩';
+}
