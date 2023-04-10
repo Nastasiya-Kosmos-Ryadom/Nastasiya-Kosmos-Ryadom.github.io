@@ -109,3 +109,22 @@ span {
 [type="checkbox"]:checked + span::before {
     background-color: dodgerblue;
 }
+
+:root {--font-color-primary: red;
+--background-color-primary: rgb(10, 243, 243);
+--font-color-first: green;
+--font-color-second: blue;
+}
+
+ul.first {
+    color: var(--font-color-first);
+    background-color: var(--background-color-primary);
+}
+
+ul.third {
+    color: var(--font-color-primary);
+}
+
+ul.second {
+    color: var(--font-color-second);
+}
