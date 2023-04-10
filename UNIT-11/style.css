@@ -77,3 +77,35 @@ input {
 input:focus {
     border: 2px solid rgb(238, 42, 212); 
 }
+
+
+
+[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+    top: -999px;
+}
+span {
+    display: flex;
+    align-items: center;
+    margin: 10px; 0;
+}
+[type="checkbox"] + span::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: aqua;
+    border: 2px solid red;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+[type="checkbox"]:checked + span {
+    color: rgb(248, 30, 255);
+}
+[type="checkbox"]:checked + span::before {
+    background-color: dodgerblue;
+}
