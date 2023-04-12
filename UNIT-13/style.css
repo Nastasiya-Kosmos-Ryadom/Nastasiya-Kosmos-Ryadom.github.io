@@ -32,3 +32,42 @@ ul {
 li {
     margin: 156;
 }
+
+
+/*Картиночка*/
+
+
+img {
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+    margin: 100px;
+    border: 10px solid red;
+    padding: 20px;
+}
+
+img:hover {
+    opacity: 0.5;
+}
+
+div {
+    box-sizing: border-box;
+    width: 200px;
+    height: 300px;
+    border: 10px solid green;
+    position: relative;
+    background-color: burlywood;
+    background-image: url(../UNIT-5/images/пингвин-средний.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100%;
+    padding: 20px;
+    margin-top: 0;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+}
+div:hover {
+    opacity: 0.5;
+}
+/*Как сделать, чтобы текст в диве был в рамках блока? ведь текст который вложен в див должен принимать параметры родительского элемента...*/
