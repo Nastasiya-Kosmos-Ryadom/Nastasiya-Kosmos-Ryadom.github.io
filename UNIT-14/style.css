@@ -1,0 +1,51 @@
+/*придаем блоку полупрозрачную заливку, полупрозрачность коэфициент 0,5*/
+p {
+    color: blueviolet;
+    background-color: rgba(20, 117, 136, 0.5);
+    width: 500px;
+    height: 500px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: blue;
+    box-shadow: 10px 10px 15px 5px green;
+    padding: 20px;
+}
+
+/*кастомизация ссылки*/
+a {
+    text-decoration: underline;
+    text-decoration-color: green;
+    text-decoration-style: dashed;
+}
+
+/*кастомизация ссылки второй вариант*/
+a {
+    text-decoration:none;
+    border-bottom: 2px solid red;
+}
+
+/*кастомизация ссылки третий вариант*/
+a {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    border-bottom: initial; /*убираем заданную во 2 варианте красную полоску*/
+}
+a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: aquamarine;
+    bottom: 0;
+    left: 0;
+    border-radius: 999px;
+    transition: all .7s ease-out;
+    opacity: 0;
+}
+
+a:hover::after {
+    width: 100%;
+    opacity: 1;
+}
