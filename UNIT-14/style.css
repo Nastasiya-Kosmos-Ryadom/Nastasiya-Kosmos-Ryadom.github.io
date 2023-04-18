@@ -1,5 +1,7 @@
-/*придаем блоку полупрозрачную заливку, полупрозрачность коэфициент 0,5*/
-p {
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap'); /*шрифт raleway*/
+
+/*придаем блоку полупрозрачную заливку, полупрозрачность коэфициент 0,5 https://fonts.google.com/ - шрифты*/
+p.one {
     color: blueviolet;
     background-color: rgba(20, 117, 136, 0.5);
     width: 500px;
@@ -9,6 +11,62 @@ p {
     border-color: blue;
     box-shadow: 10px 10px 15px 5px rgb(117, 224, 117);
     padding: 20px;
+    margin: 100px;
+    font-family: heebo;/*семейство шрифта/google*/
+    font-size: 20px; /*размер шрифта*/
+    font-weight:600; /*жирность?*/
+    text-transform:uppercase; /*начертание: все буквы большие*/
+    text-align: center; /*выравнивание*/
+    text-shadow: 5px 5px 3px rgba(255, 0, 0, 0.3) ;/*тень: смещение по оси х, смещение по оси у, размытие, цвет*/
+    text-decoration: underline;/*подчеркивание, зачеркивание и тд*/
+}
+
+p.two {
+    color: blueviolet;
+    background-color: rgba(20, 117, 136, 0.5);
+    width: 500px;
+    height: 500px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: blue;
+    box-shadow: 10px 10px 15px 5px rgb(117, 224, 117);
+    padding: 20px;
+    margin: 100px;
+    font-family: oswald;/*семейство шрифта/google*/
+    font-size: 20px; /*размер шрифта*/
+    font-weight: 400; /*жирность?*/
+}
+
+p.three {
+    color: blueviolet;
+    background-color: rgba(20, 117, 136, 0.5);
+    width: 500px;
+    height: 500px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: blue;
+    box-shadow: 10px 10px 15px 5px rgb(117, 224, 117);
+    padding: 20px;
+    margin: 100px;
+    font-family: Raleway;/*семейство шрифта/google*/
+    font-size: 20px; /*размер шрифта*/
+    font-weight: 400; /*жирность?*/
+    font-style: italic; /*курсив?*/
+}
+p.four {
+    color: rgb(5, 163, 29);
+    background-color: rgba(20, 117, 136, 0.5);
+    width: 500px;
+    height: 500px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: blue;
+    box-shadow: 10px 10px 15px 5px rgb(117, 224, 117);
+    padding: 20px;
+    margin: 100px;
+    font-family: DancingScript;/*семейство шрифта/local*/
+    font-size: 20px; /*размер шрифта*/
+    font-weight: 400; /*жирность?*/
 }
 
 /*кастомизация ссылки*/
@@ -22,6 +80,7 @@ a {
 a {
     text-decoration:none;
     border-bottom: 2px solid red;
+    color: rgb(240, 15, 15);
 }
 
 /*кастомизация ссылки третий вариант*/
@@ -50,7 +109,7 @@ a:hover::after {
     opacity: 1;
 }
 
-/*внутренняя тень = inset: смещение по х, смещение по у, радиус размытия,ширина, цвет/ рамка отодвигает тень / */
+/*внутренняя тень = inset: смещение по х, смещение по у, радиус размытия,ширина, цвет/ рамка отодвигает тень / 2 тени пишутся через запятую */
 div {
     box-sizing: border-box;
     width: 300px;
@@ -58,6 +117,6 @@ div {
     border-radius: 999px;
     margin: 200px;
     border: 3px solid red;
-    background-color: rgb(168, 115, 218);
-    box-shadow: inset 30px 30px 20px 5px rgba(20, 117, 136, 0.5);
+    background: linear-gradient(300deg, rgba(2,0,36,1)0%, rgba(9,9,121,1)35%, rgba(0,212,255,1)100%); /*градиент*/
+    box-shadow: inset 20px 20px 40px 3px rgb(237, 20, 20), 20px 20px 10px 5px rgba(129, 225, 172, 0.5) ;
 }

@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@font-face {
+    font-family: 'DancingScript';
+    src: url(../fonts/DancingScript-Medium.eot);
+    src: url(../fonts/DancingScript-Medium.ttf) format('truetype'),
+         url(../fonts/DancingScript-Medium.woff) format('woff'),
+         url(../fonts/DancingScript-Medium.woff2) format('woff2');
+  }
