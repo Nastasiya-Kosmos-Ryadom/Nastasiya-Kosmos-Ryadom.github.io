@@ -7,7 +7,7 @@ p {
     border-width: 5px;
     border-style: solid;
     border-color: blue;
-    box-shadow: 10px 10px 15px 5px green;
+    box-shadow: 10px 10px 15px 5px rgb(117, 224, 117);
     padding: 20px;
 }
 
@@ -48,4 +48,16 @@ a:after {
 a:hover::after {
     width: 100%;
     opacity: 1;
+}
+
+/*внутренняя тень = inset: смещение по х, смещение по у, радиус размытия,ширина, цвет/ рамка отодвигает тень / */
+div {
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+    border-radius: 999px;
+    margin: 200px;
+    border: 3px solid red;
+    background-color: rgb(168, 115, 218);
+    box-shadow: inset 30px 30px 20px 5px rgba(20, 117, 136, 0.5);
 }
