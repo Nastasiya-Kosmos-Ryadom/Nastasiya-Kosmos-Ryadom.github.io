@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
+    <!--<script>
         alert('Hello world') 
-    </script><!--первый способ подключения-->
-    <script src="script.js">alert('контекст не будет выведен, нет смысла писать, контекст пишется в подключенном файле js')</script> <!--третий способ подключения-->
+    </script>--><!--первый способ подключения-->
+    <script defer src="script.js">alert('контекст не будет выведен, нет смысла писать, контекст пишется в подключенном файле js')</script> <!--третий способ подключения-->
 </head>
 <body>
-    <button onclick="alert('подключение js через атрибут тэга')">Click me please</button> <!--второй способ подключения js - перед закрывающим тегом боди-->
+    <!--<button onclick="alert('подключение js через атрибут тэга')">Click me please</button>-->
+    <!--второй способ подключения js - перед закрывающим тегом боди-->
 </body>
 </html>
