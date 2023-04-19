@@ -1,0 +1,74 @@
+p {
+    width: 500px;
+    height: 500px;
+    background-color: coral;
+}
+
+/*медиазапрос делает изменение стиля только при выводе на печать через ctrl+p*/
+@media print {
+    p {font-size: 10pt;
+    color: red;
+}
+}
+
+/*Устанавливаем базовые величины*/
+html {
+    font-size: 18px; /**базовый размер шрифта 16 рх*/
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 20px; /*межстрочный интервал*/
+}
+
+/*от базовых величин устанавливаем относительные*/
+p {
+    font-size: 2rem; /*rem - считает от базовой величины страницы - здесь 2 базовых величины*/
+}
+
+/*2 способ заложить базовые параметры для сайта*/
+body {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.2;
+    font-size: 18px;
+}
+
+*, *::before, *::after {
+    font-size: inherit; /*наследование*/
+    line-height: inherit;
+    font-size: inherit;
+}
+
+/*относительная величина от родителя*/
+a {
+    font-size: 0.5em;
+}
+
+span {
+    width: 50%; /*??? не получается установтить процент*/
+    background-color: aquamarine;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+    margin: 0;
+    padding: 20px;
+    background-color: rgb(222, 217, 110);
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+    margin: 20px;
+    width: 25%;
+}
+
+li:nth-child(even) {
+    background-color: blueviolet;
+}
