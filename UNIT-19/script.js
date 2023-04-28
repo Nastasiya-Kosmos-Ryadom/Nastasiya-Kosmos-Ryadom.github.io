@@ -60,3 +60,12 @@ let filter = Day.filter(function (item, index, array){
     return item !== 'воскресенье';
 });
 console.log(filter);
+
+/*первое задание второй вариант ???
+function res(a,b) {
+    let result = a * b;
+    return result;
+}
+if (a=undefined) {console.log(res(b,b))};
+if (b=undefined) {console.log(res(a,a))};
+else {console.log(res(a,b))};*/
