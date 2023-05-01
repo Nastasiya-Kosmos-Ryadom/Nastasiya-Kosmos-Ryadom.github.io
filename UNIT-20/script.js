@@ -74,6 +74,39 @@ let htmlStyle = `
 <li class="flovers__element">calendula</li>
 </ul>`; */
 
+/*получить свойство атрибута id (так можно получать свойства любого атрибута или нет???) */
+let title = document.querySelector('h1');/*сначала заводим в переменную атрибут */
+console.log(title.id);
+
+/*проверить наличие атрибута */
+console.log(title.hasAttribute('class'));
+/*получить значение атрибута */
+console.log(title.getAttribute('class'));
+/*установить значение атрибута (так можно например поменять стиль в самом тэге) */
+let styleWildflowers = document.querySelector('h2');
+styleWildflowers.setAttribute('style', 'color: red; background-color: aqua');
+let styleUl = document.querySelector('ul');
+styleUl.setAttribute('style', 'color: blue');
+/*удаление атрибута */
+styleUl.removeAttribute('style');
+/*Добавление класса отдельному элементу списка */
+let newTitle = newnew;
+console.log(newTitle.classList.add('newClass')); /*посмотреть можно в элементс ф12 */
+
+/*не получилось удалить последний элемент списка через массив */
+let Y = document.getElementsByClassName('flovers__element');
+let yArray = Array.from(Y);
+yArray.pop();
+
+liElementsArr.pop()
+
+
+/* ??? стили - почему не получается вывести слили - когда уже массив созданв переменную или как занести в переменную название класса? */
+
+/*console.log(getComputedStyle(zArray));*/
+
+
+
 
 
  
