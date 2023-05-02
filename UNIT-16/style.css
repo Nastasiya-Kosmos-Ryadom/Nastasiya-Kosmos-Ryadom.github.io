@@ -1,0 +1,52 @@
+div {
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 100px;
+    margin-left: 100px;
+    width: 700px;
+    height: 500px;
+    background-color: bisque;
+    
+}
+
+.one {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*object-fit: cover;*/
+    transition: all .3s ease-out;
+    /*filter: blur(0px); /*размытие*/
+    filter: grayscale(0%);/*интенсивность цвета*/
+    /*filter: drop-shadow(15px 15px 20px red); /*тенька*/
+    /*opacity: 100%;/*прозрачность*/
+    
+}
+
+.one:hover {
+    /*filter: blur(5px); /*размытие*/
+    filter: grayscale(100%);/*интенсивность цвета*/
+    /*filter: drop-shadow(15px 15px 20px rgb(187, 255, 0));/*тенька*/
+    opacity: 50%;/*прозрачность*/
+}
+
+.two {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60%;
+    margin-bottom: 100px;
+    margin-left: 0px;
+    transition: all .3s ease-out;
+}
+
+/*как сделать, чтобы работало оба свойства странслейт???*/
+.two:hover {
+    transform:
+    translate(50%, 50%);
+    transform:
+    rotate(90deg);
+}
