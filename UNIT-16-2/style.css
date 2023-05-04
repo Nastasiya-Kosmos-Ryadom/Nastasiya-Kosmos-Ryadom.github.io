@@ -1,0 +1,49 @@
+/*vмедиа-запросы удобнее писать сразу под тегом, к которому они относятся!!!*/
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+}
+
+img {
+    box-sizing: border-box;
+    display: block;
+    width: 310px;
+    height: auto;
+    border: 10px solid rgb(212, 62, 17);
+} /*это базовые свойства, по общему правилу сейчас они пишутся для мобильных устрйств, а уже медиа-запросы - делаются для десктопной версии. Если пишем общие правила для десктопов, то медиазапросы будут в макс переходить*/
+
+@media (min-width: 320px) and (max-width: 530px) {
+    img {
+        width: 310px;
+        border: 10px solid rgb(28, 245, 8);
+    }
+
+    body {
+        background-color: aquamarine;
+    }
+}
+
+@media (min-width: 530px) and (max-width: 850px) {
+    img {
+        width: 520px;
+        border: 10px solid rgb(245, 245, 8);
+    }
+
+    body {
+        background-color: rgb(221, 128, 225);
+    }
+}
+
+@media (min-width: 851px) {
+    img {
+        width: 700px;
+        border: 10px solid rgb(78, 63, 209);
+    }
+
+    body {
+        background-color: rgb(232, 255, 127);
+    }
+}

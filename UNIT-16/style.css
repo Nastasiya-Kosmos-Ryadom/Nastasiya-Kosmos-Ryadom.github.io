@@ -1,4 +1,4 @@
-div {
+.onediv {
     box-sizing: border-box;
     position: relative;
     margin-top: 100px;
@@ -6,7 +6,18 @@ div {
     width: 700px;
     height: 500px;
     background-color: bisque;
-    
+}
+
+.twodiv {
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 100px;
+    margin-left: 100px;
+    width: 700px;
+    height: 500px;
+    background-color: bisque;
+    transform: skewX(30deg); /*искажение по оси х/у - можно применять как к блоку так и к отдельному элементу и картинеке*/
+    /*transform-origin: 10px, 10px;/*изменение точки отсчета трансформаций. если по умолчанию - то будет относительно центра картинки или блока все трансформации*/
 }
 
 .one {
@@ -41,12 +52,19 @@ div {
     margin-bottom: 100px;
     margin-left: 0px;
     transition: all .3s ease-out;
+
+    transform:
+    scale(-1,1)/*отображение картинки по-горизонтали (1,-1) - по-вертикали. можно в ховер применить*/
+
+
+    
 }
 
-/*как сделать, чтобы работало оба свойства странслейт???*/
+/*как сделать, чтобы работало оба свойства странслейт???  писать свойства без запятой? В фильтрах так же?*/
 .two:hover {
     transform:
-    translate(50%, 50%);
-    transform:
-    rotate(90deg);
+    translate(50%, 50%)
+    rotate(90deg)
+    scale(1.5,1.5) /*изменяет по оси х и у размер: 1 - изначальный размер, 1.5 - увелич в 2 раза, 0.5 - уменьшает в 2 раза и т д. Одно значение - поменяет одинаково в оси х и у. Если надо только одну ось менять - ставится  scaleХ() или  scaleУ()*/
+    
 }
