@@ -1,0 +1,133 @@
+body {
+        width: 100%;
+        height: auto;
+        padding: 0 100px;
+}
+
+header, nav, .nav {
+    width: 100%;
+    height: auto;
+    padding: 0 100px;
+}
+
+/*Устанавливаем границы блока ul*/
+.nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /*background-color: bisque;*/
+}
+
+/*оборачиваем ul во флекс-контейнер*/
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 940.6px;
+    height: 87.94px;
+    border-bottom: 1px solid black
+}
+
+.nav {
+    font-family: 'Gilroy-Bold';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.a-nav {
+    font-family: 'Gilroy-Bold';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+text-decoration-line: none;
+color: #828282;
+}
+
+
+h1 {
+    font-family: 'Gilroy-Bold';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 47px;
+    line-height: 58.19px;
+}
+
+h2 {
+    font-family: 'Gilroy-Bold';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 42.09px;
+    text-align: center;
+}
+
+#home {
+    color:#070707;
+}
+
+.none {
+
+    font-family: 'Gilroy-Medium';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.about {
+ 
+font-family: 'Gilroy-Medium';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+color: #070707;
+}
+
+.portfolio {
+    font-family: 'Gilroy-Medium';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+text-decoration-line: underline;
+
+color: #070707;
+}
+
+.end {font-family: 'Gilroy-Medium';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+text-align: center;
+
+color: #828282;}
+
+
+
+/*.desktop {
+    position: absolute;
+    width: 943.61px;
+    height: 387px;
+    left: 250.69px;
+    top: 276.94px;
+} */
+
+@media (max-width: 399px) {
+    .desktop {
+        display: none;
+    }    
+}
+
+@media (min-width: 400px) {
+    .mobile {
+        display: none;
+    }
+}

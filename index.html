@@ -5,25 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="fonts.css">
 </head>
 <body>
 <header>
     <nav>
-        <ul>
+        <ul class="nav">
             <li>
-                <a href="#home">Home</a>
+                <a class="a-nav" id="home" href="#home">Home</a>
             </li>
             <li>
-                <a href="#About">About me</a>
+                <a class="a-nav" href="#About">About me</a>
             </li>
             <li>
-                <a href="#Skills">Skills</a>
+                <a class="a-nav" href="#Skills">Skills</a>
             </li>
             <li>
-                <a href="#Portfolio">Portfolio</a>
+                <a class="a-nav" href="#Portfolio">Portfolio</a>
             </li>
             <li>
-                <a href="#Contacts">Contacts</a>
+                <a class="a-nav" href="#Contacts">Contacts</a>
             </li>
         </ul>
     </nav>
@@ -31,7 +33,7 @@
 <main>
     <section id="home">
         <h1>Denis Novik</h1>
-        <ul>
+        <ul class="none">
             <li>UX | UI designer</li>
             <li>24 years old, Minsk</li>
         </ul>
@@ -39,20 +41,23 @@
             <a href="#RU">RU</a>
             <a href="#ENG">| ENG</a>
         </div>
-        <img src="images/BSPP2266.png" alt="">
+        <img class="desktop" src="images/BSPP2266.png" alt="">
         <br>
-        <img src="images/Group 2.1.png" alt="">
+        <img class="mobile" src="images/Group 2.1.png" alt="">
     </section>
     <section id="about">
         <h2>About me</h2>
-        <ul>
-            <li>Hi, I'm Denis – UX/UI designer from Minsk. 
+        <ul class="about">
+            <li>Hi, I'm Denis – UX/UI designer from Minsk.
+                <br>
                 I'm interested in design and everything connected with it.
             </li>
-            <li>I'm studying at courses "Web and mobile design 
+            <li>I'm studying at courses "Web and mobile design
+                <br>
                 interfaces" in IT-Academy.
             </li>
             <li>Ready to implement excellent projects
+                <br>
                 with wonderful people.
             </li>
         </ul>
@@ -86,11 +91,11 @@
     <section id="Portfolio">
         <h2>Portfolio</h2>
         <img src="images/Слой 8.png" alt="">
-        <a href="#1">Online fashion store - Homepage</a>
+        <a class="portfolio" href="#1">Online fashion store - Homepage</a>
         <img src="images/reebok_web.png" alt="">
-        <a href="#2">Reebok Store - Concept</a>
+        <a class="portfolio" href="#2">Reebok Store - Concept</a>
         <img src="images/braun_web.png" alt="">
-        <a href="#3">Braun Landing Page - Concept</a>
+        <a class="portfolio" href="#3">Braun Landing Page - Concept</a>
     </section>
 </main>
 <footer>
@@ -117,7 +122,7 @@
             <img src="images/иконка4.png" alt="">
             </a></li>
     </ul>
-    <span>Like me on
+    <span class="end">Like me on
         <br>
         LinkedIn, Instagram, Behance, Dribble
     </span>
