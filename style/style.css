@@ -25,6 +25,10 @@ footer {
 }
 
 .language {
+    display: flex;
+    padding-right: 18px;
+    margin: -28px;
+    justify-content: end;
     transform:
     rotate(90deg)
     scale(-1,-1);
@@ -89,8 +93,8 @@ header, main, footer, nav, .nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 940.6px;
-    height: 87.94px;
+    width: 945.6px;
+    height: 95.94px;
     border-bottom: 1px solid black
 }
 
@@ -167,7 +171,7 @@ h2 {
     font-size: 18px;
     line-height: 22px;
     text-align: center;
-    margin: 58px;
+    margin: 54px;
 }
 
 .skill_program {
@@ -195,11 +199,11 @@ h2 {
     align-items: center;
     justify-content: space-between;
     padding: 0%;
-    margin: 87px 0 0 0;
+    margin: 89px 0 0 0;
 }
 
 #Portfolio {
-    margin: 115px 0 55px 0;
+    margin: 116px 0 56px 0;
 }
 
 .portfolio_img {
@@ -220,7 +224,7 @@ h2 {
 }
 
 .start {
-    margin: 34px 0 39px;
+    margin: 31px 0 39px;
 }
 
 .contacts_messenger {
@@ -253,6 +257,33 @@ h2 {
     color:#070707;
 }
 
+#about::before {
+    content: "";
+    display: block;
+    width: 100vw;
+    height: 100%;
+    background-color: #F6F6F6;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+#Portfolio::before {
+    content: "";
+    display: block;
+    width: 100vw;
+    height: 2253px;
+    background-color: #F6F6F6;
+    position: absolute;
+    top: 1910px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+
 .none {
 
     font-family: 'Gilroy-Medium';
@@ -260,13 +291,19 @@ h2 {
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
-    margin: 0 295px 0 295px;
-    padding: 94px 0 0 0;
+    margin: 0 260px 0 209px;
+    padding: 39px 0 0 0;
 }
 
-.start, .none, .language {
+/*.start, .none, .language {
     display: inline-block;
    
+}*/
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .about {
@@ -336,7 +373,7 @@ text-align: center;
 
 color: #FFFFFF;
 
-margin: 32px 393px;
+margin: 35px 393px;
 }
 
 
