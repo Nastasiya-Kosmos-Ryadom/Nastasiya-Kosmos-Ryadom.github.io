@@ -4,7 +4,6 @@ html {
 }
 
 body {
-        width: 100%;
         height: auto;
         padding: 0 252px;
         width: 1445px;
@@ -397,6 +396,26 @@ height: 478px;
 
     .nav {
         display: none;
+    }
+
+    body {
+        height: auto;
+        width: 375px;
+    }
+
+    #about {
+        padding: 81px 30px 76px 29px;
+    }
+
+    .about {
+        font-family: 'Gilroy-Medium';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+
+        color: #000000;
     }
 
     section {
