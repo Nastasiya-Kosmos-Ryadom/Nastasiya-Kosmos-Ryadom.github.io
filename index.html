@@ -13,33 +13,33 @@
     <nav>
         <ul class="nav">
             <li>
-                <a class="a-nav" id="home" href="#home">Home</a>
+                <a class="a_nav a_nav__home" href="#home">Home</a>
             </li>
             <li>
-                <a class="a-nav" href="#About">About me</a>
+                <a class="a_nav" href="#About">About me</a>
             </li>
             <li>
-                <a class="a-nav" href="#Skills">Skills</a>
+                <a class="a_nav" href="#Skills">Skills</a>
             </li>
             <li>
-                <a class="a-nav" href="#Portfolio">Portfolio</a>
+                <a class="a_nav" href="#Portfolio">Portfolio</a>
             </li>
             <li>
-                <a class="a-nav" href="#Contacts">Contacts</a>
+                <a class="a_nav" href="#Contacts">Contacts</a>
             </li>
         </ul>
     </nav>
 </header>
 <main>
     <section id="home">
-        <h1>Denis Novik</h1>
+        <h1 class="start">Denis <br> Novik</h1>
         <ul class="none">
             <li>UX | UI designer</li>
             <li>24 years old, Minsk</li>
         </ul>
-        <div>
-            <a href="#RU">RU</a>
-            <a href="#ENG">| ENG</a>
+        <div class="language">
+            <a class="language_ru" href="#RU">RU</a>
+            <a class="language_eng" href="#ENG">| ENG</a>
         </div>
         <img class="desktop" src="images/BSPP2266.png" alt="">
         <br>
@@ -64,67 +64,73 @@
     </section>
     <section id="Skills">
         <h2>Skills</h2>
-        <p>I work in such programs as</p>
-        <ul>
-            <li>
-                <img src="images/Group1.png" alt="">
-                <span>Adobe Photoshop</span>
-                <img src="images/GroupStar4.png" alt="">
+        <p class="skill_programs">I work in such programs as</p>
+        <ul class="programs_work">
+            <li class="skill_program skill_program__Photoshop">
+                <img class="skill_Photoshop skill_Photoshop__imgPhotoshop" src="images/Group1.png" alt="">
+                <span class="skill_Photoshop skill_Photoshop__textPhotoshop">Adobe <br> Photoshop</span>
+                <img class="skill_Photoshop skill_Photoshop__ratingPhotoshop" src="images/GroupStar4.png" alt="">
             </li>
-            <li>
-                <img src="images/Group2.png" alt="">
-                <span>Adobe Illustrator</span>
-                <img src="images/GroupStar3.png" alt="">
+            <li class="skill_program skill_program__Illustrator">
+                <img class="skill_Illustrator skill_Illustrator__imgIllustrator" src="images/Group2.png" alt="">
+                <span class="skill_Illustrator skill_Illustrator__textIllustrator">Adobe <br> Illustrator</span>
+                <img class="skill_Illustrator skill_Illustrator__ratingIllustrator" src="images/GroupStar4.png" src="images/GroupStar3.png" alt="">
             </li>
-            <li>
-                <img src="images/Group3.png" alt="">
-                <span>Adobe After Effects</span>
-                <img src="images/GroupStar4.png" alt="">
+            <li class="skill_program skill_program__Effects">
+                <img class="skill_Effects skill_Effects__imgEffects" src="images/Group3.png" alt="">
+                <span class="skill_Effects skill_Effects__textEffects">Adobe <br> After Effects</span>
+                <img class="skill_Effects skill_Effects__ratingEffects" src="images/GroupStar4.png" alt="">
             </li>
-            <li>
-                <img src="images/Group4.png" alt="">
-                <span>Figma</span>
-                <img src="images/GroupStar4.png" alt="">
+            <li class="skill_program skill_program__Figma">
+                <img class="skill_Figma skill_Figma__imgFigma" src="images/Group4.png" alt="">
+                <span class="skill_Figma skill_Figma__textFigma">Figma</span>
+                <img class="skill_Figma skill_Figma__ratingFigma" src="images/GroupStar4.png" alt="">
             </li>
         </ul>
     </section>
     <section id="Portfolio">
         <h2>Portfolio</h2>
-        <img src="images/Слой 8.png" alt="">
-        <a class="portfolio" href="#1">Online fashion store - Homepage</a>
-        <img src="images/reebok_web.png" alt="">
-        <a class="portfolio" href="#2">Reebok Store - Concept</a>
-        <img src="images/braun_web.png" alt="">
-        <a class="portfolio" href="#3">Braun Landing Page - Concept</a>
+        <ul class="portfolio_work">
+            <li class="portfolio_title">
+              <img class="portfolio_img" src="images/Слой 8.png" alt="">
+              <a class="portfolio" href="#1">Online fashion store - Homepage</a></li>
+            <li class="portfolio_title">
+              <img class="portfolio_img" src="images/reebok_web.png" alt="">
+              <a class="portfolio" href="#2">Reebok Store - Concept</a></li>
+            <li class="portfolio_title">
+              <img class="portfolio_img" src="images/braun_web.png" alt="">
+              <a class="portfolio" href="#3">Braun Landing Page - Concept</a></li>
+        </ul>
+    
     </section>
 </main>
-<footer>
+<footer id="contacts">
     <h2>Contacts</h2>
-    <p></p>
-    <a href="#message">Send message</a>
-    <ul>
-        <li>
+    <p class="contacts_text">Want to know more or just chat? 
+        <br>
+        You are welcome!</p>
+    <a class="contacts_message" href="#message">Send message</a>
+    <ul class="contacts_messenger">
+        <li class="contacts_title">
             <a href="#i1">
                 <img src="images/иконка1.png" alt="">
             </a>
         </li>
-        <li>
+        <li class="contacts_title">
             <a href="#i2">
             <img src="images/иконка2.png" alt="">
             </a>
         </li>
-        <li>
+        <li class="contacts_title">
             <a href="#i3">
             <img src="images/иконка3.png" alt="">
             </a></li>
-        <li>
+        <li class="contacts_title">
             <a href="#i4">
             <img src="images/иконка4.png" alt="">
             </a></li>
     </ul>
-    <span class="end">Like me on
-        <br>
-        LinkedIn, Instagram, Behance, Dribble
+    <span class="end">Like me on <br> LinkedIn, Instagram, Behance, Dribble
     </span>
 </footer>
 </body>
