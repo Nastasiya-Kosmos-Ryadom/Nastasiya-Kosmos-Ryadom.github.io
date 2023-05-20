@@ -2,15 +2,22 @@
 
 @media (max-width: 375px) {
     
-    
     html {
         box-sizing: border-box;
+        /*position: relative;
+        left: 30px;
+        right: 30px;*/
     }
     
     *, *::before, *::after {
         box-sizing: inherit;
     }
-    
+
+    body {
+        width: 375;
+        
+    } /*почему появляются отступы только у фото? а у последующих блоков не появляются?*/
+     
     .desktop {
         display: none;
     } 
@@ -19,7 +26,202 @@
         display: none;
     }
 
+    .portfolio_img {
+        width: 316px;
+        height: 176px;
+    }
+
+  
+
+    .start {
+        font-family: 'Gilroy-Bold';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 47px;
+        line-height: 58px;
+        
+        color: #000000;
+    }
+
+    .none {
+        font-family: 'Gilroy-Medium';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        
+        color: #090909;
+
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    .language {
+        display: none;
+    } /*временно*/
+
+    .mobile {
+        width: 316.5px;
+        height: 478px;
+        }
+
+    h2 {
+        font-family: 'Gilroy-Bold';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 42px;
+        text-align: center; /*убрать, если делать секции флексом*/
+        
+        color: #000000;
+    }
+
+    .about {
+        list-style-type: none;
+        padding-left: 0;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 316.5px;
+        height: 261px;
+        justify-content: space-between;
+
+        font-family: 'Gilroy-Medium';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        
+        color: #000000;
+
+        margin: auto;
+    }
+
+    .skill_programs {
+        font-family: 'Gilroy-Medium';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        
+        color: #000000;
+    }
+
+    .programs_work {
+        list-style-type: none;
+        padding-left: 0;
+
+        font-family: 'Gilroy-Bold';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        
+        color: #828282;
+
+        
+    }
+
+    .skill_program {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 206px;
+        margin: 81px;
+    }
+
+    .portfolio_work {
+        list-style-type: none;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .portfolio {
+        font-family: 'Gilroy-Medium';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        text-decoration-line: underline;
+        
+        color: #000000;
+
+        
+}
+
+.portfolio_img {
+    margin-top: 77px;
+    margin-bottom: 35px;
+}
+
+.contacts_text {
+    font-family: 'Gilroy-Medium';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
     
+    color: #090909;
+}
+
+.contacts_message {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 316px;
+    height: 42px;
+    background-color: #070707;
+    border-radius: 999px;
+    border: none;
+
+    font-family: 'Gilroy-Bold';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration-line: none;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    color: #FFFFFF;
+    
+    margin: 35px auto;
+}
+
+.contacts_messenger {
+    list-style-type: none;
+    padding-left: 0;
+
+    width: 315.11;
+    height: 40.92;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.end {
+    font-family: 'Gilroy-Medium';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    
+    color: #828282;
+    display: block; /*только так получилось центрировать*/
+
+}
 }
 
 
