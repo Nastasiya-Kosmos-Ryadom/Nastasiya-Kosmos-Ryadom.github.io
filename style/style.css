@@ -7,6 +7,7 @@
         /*position: relative;
         left: 30px;
         right: 30px;*/
+       
     }
     
     *, *::before, *::after {
@@ -14,7 +15,7 @@
     }
 
     body {
-        width: 375;
+         width: 375;
         
     } /*почему появляются отступы только у фото? а у последующих блоков не появляются?*/
      
@@ -22,8 +23,21 @@
         display: none;
     } 
 
-    .nav {
+    .nav-d, .nav-m {
         display: none;
+    }
+
+    header {
+        width: 375;
+        height: auto;
+    }
+
+    .menu {
+        float: right;
+        margin-right: 0px;
+        position: fixed;
+        display: flex;
+        justify-content: end;
     }
 
     .portfolio_img {
@@ -227,6 +241,14 @@
 
 @media (min-width: 376px) {
     .mobile {
+        display: none;
+    }
+
+    .nav-m {
+        display: none;
+    }
+
+    .menu {
         display: none;
     }
 
